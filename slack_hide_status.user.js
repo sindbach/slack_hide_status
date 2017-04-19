@@ -11,6 +11,5 @@
 /* jshint -W097 */
 'use strict';
 
-setInterval(function(){
-    $('.stream-item:has(.message_current_status)').hide();
-}, 10000 );
+document.getElementById('.message_current_status').hide();
+console.log("Executed");
