@@ -10,6 +10,8 @@
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';
-
-document.getElementById('.message_current_status').hide();
-console.log("Executed");
+var message_status = "ts_tip_float message_current_status ts_tip ts_tip_top ts_tip_multiline";
+var elements = document.getElementsByClassName(message_status);
+Array.prototype.forEach.call(elements, function(element){
+    element.style.visibility = "hidden";
+});
